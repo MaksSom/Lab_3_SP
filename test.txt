@@ -1,0 +1,37 @@
+// Define an object representing a person
+let person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 30,
+    hobbies: [ "reading ", "coding ", "traveling "],
+    address: {
+        city: "Exampleville",
+        country: "Wonderland"
+    }
+};
+
+// Print information about the person
+console.log( "Person_Information: ");
+console.log( "Name: ", person.firstName, person.lastName);
+console.log( "Age: ", person.age);
+console.log( "Hobbies: ", person.hobbies.join( ", "));
+console.log( "Address: ", person.address.city + ", " + person.address.country);
+
+// Define an array of numbers
+let numbers = [1, 2, 3, 4, 5];
+
+// Calculate the sum of numbers using a loop
+let sum = 0;
+for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+}
+
+console.log( "\nSum_of_Numbers: ", sum);
+
+// Define a function to greet a person
+function greetPerson(person) {
+    console.log( "Hello, " + person.firstName + "! ");
+}
+
+// Call the greetPerson function with the defined person
+greetPerson(person);
